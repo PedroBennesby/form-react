@@ -9,12 +9,12 @@ function App() {
       <Typography variant="h3" align="center" component="h1">
         Formulário Cadastro
       </Typography>
-      <FormularioCadastro onSubmit={handleSubmit} validarCpf={validarCpf} />
+      <FormularioCadastro aoEnviar={aoEnviarForm} validarCpf={validarCpf} />
     </Container>
   );
 }
 
-function handleSubmit(data) {
+function aoEnviarForm(data) {
   console.log(data);
   alert("Obrigado por se cadastrar!");
 }
